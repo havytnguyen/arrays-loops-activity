@@ -6,7 +6,7 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
-
+// my file accidentally merged and I couldn't see our work from previously when I came back to my group so I left this one blank because i was too nervous to ask to go back sorry 
 
 // Example output
 // 1. swimming
@@ -24,7 +24,12 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
-
+let colors =['lightblue', 'blue', 'red', 'teal', 'purple', 'teal'];
+let tealCount =0;
+for (index=0; index < colors.length; index +=1){
+     tealCount += 1;
+     console.log(tealCount);
+}
 
 // Example output
 // green, red, teal, orange, teal
@@ -40,6 +45,15 @@
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+let numbers = [25, 7, 3, 13, 10, 20]
+let oddNumbers = [];
+let evenNumbers = [];
+for [index =0; index < numbers.length; index +=1]
+     if (numbers.[index] % 2 ==0) {
+          evenNumbers.push(numbers[index]);
+     } else {
+          oddNumbers.push(numbers[index]);
+     }
 
 
 // Example output
@@ -56,7 +70,19 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
+let array = [true, false, false, true, false, true, true];
+let toggled = [];
+for (let index =0; index < array.length; index +=1)
+     if (array[index] === true){
+          array[index] = false;
+          toggled.push(array[index]);
+     } else {
+array[index] = true;
+toggled.push(array[index]);
+    
 
+}
+console.log(toggled);
 
 // Example output
 // true, false, true, true
@@ -74,8 +100,11 @@
  *
  * Hint: Try using a while loop for this one.
  */
-
-
+ let numbersArray = [12, 1, 5, 6, 9, 0, 0];
+ while(numbersArray [numbersArray.length - 1] ===0){
+     numbersArray.pop();
+ }
+conesole.log(numbersArray);
 // Example output
 // Before loop 3, 0, 2, 8, 0, 0, 0
 // After loop 3, 0, 2, 8
@@ -90,9 +119,21 @@
       and lowest numbers.
  * 3. Log the highest and lowest number to the console
  */
-
+let numbersArray =  [1, 2, 4, 6, 8, 13, -1, -10, 100, -45];
+let high;
+let low;
+for(let index =0; index < numbersArray.length; index +=1){
+     if (numbersArray[index] > high){
+          high = numbersArray[index];
+     } else {
+          numbersArray[index] <low;
+          low = numbersArray[index];
+     }
+}
+console.log(high,low);
 
 // Example output
 // 2, 2, -3, 7, 4, 1, 7, 12, 8
 // High: 12
 // Low: -3
+
